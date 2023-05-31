@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <h1>Basic calculator</h1>
+
+    <p>
+      <button onclick="
+        updateCalculation('1');
+      " class="style-button">1</button>
+      
+      <button onclick="
+        updateCalculation('2');
+      " class="style-button">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+      " class="style-button">3</button>
+
+      <button onclick="
+        updateCalculation(' + ');
+      " class="style-button">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+      " class="style-button">4</button>
+      
+      <button onclick="
+        updateCalculation('5');
+      " class="style-button">5</button>
+
+      <button onclick="
+        updateCalculation('6');
+      " class="style-button">6</button>
+
+      <button onclick="
+        updateCalculation(' - ');
+      " class="style-button">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+      " class="style-button">7</button>
+      
+      <button onclick="
+        updateCalculation('8');
+      " class="style-button">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+      " class="style-button">9</button>
+
+      <button onclick="
+        updateCalculation(' * ');
+      " class="style-button">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');
+      " class="style-button">0</button>
+      
+      <button onclick="
+        updateCalculation('.');
+      " class="style-button">.</button>
+
+      <button onclick="
+        calculation = eval(calculation);
+        console.log(calculation);
+      " class="style-button">=</button>
+
+      <button onclick="
+        updateCalculation(' / ');
+      " class="style-button">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+        console.log(calculation);
+      " class="style-button">Clear</button>
+    </p>
+   
+    <script src="/scripts/calculator.js">
+      
+    </script>
+
+</div>
+  </body>
+</html>
